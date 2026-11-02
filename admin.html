@@ -1146,7 +1146,7 @@
 
   <!-- Application Logic -->
   <script>
-    const FIREBASE_URL = 'https://my-room-app-73743-default-rtdb.firebaseio.com/du_an.json';
+    const FIREBASE_URL = 'https://brother-7bb52-default-rtdb.asia-southeast1.firebasedatabase.app/du_an.json';
     let projectsData = [];
     let hasUnsavedChanges = false;
 
@@ -1179,7 +1179,7 @@
     // --- Initial Load ---
 
     // --- Backgrounds State & Functions ---
-    const FIREBASE_BG_URL = 'https://my-room-app-73743-default-rtdb.firebaseio.com/anh_nen.json';
+    const FIREBASE_BG_URL = 'https://brother-7bb52-default-rtdb.asia-southeast1.firebasedatabase.app/anh_nen.json';
     let backgroundsData = { hero: '', services: '', contact: '', footer: '' };
     let bgChangedFlags = { hero: false, services: false, contact: false, footer: false };
 
@@ -1299,7 +1299,7 @@
       }
       showLoading('Đang lưu ảnh nền ' + slot + ' lên Firebase...');
       try {
-        const url = 'https://my-room-app-73743-default-rtdb.firebaseio.com/anh_nen/' + slot + '.json';
+        const url = 'https://brother-7bb52-default-rtdb.asia-southeast1.firebasedatabase.app/anh_nen/' + slot + '.json';
         const res = await fetch(url, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
