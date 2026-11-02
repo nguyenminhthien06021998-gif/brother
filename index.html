@@ -1611,7 +1611,7 @@
 
           // Tải động ảnh nền (Hero, Services, Contact, Footer) từ Firebase RTDB
     async function loadBackgroundsFromFirebase() {
-      const FIREBASE_BG_URL = 'https://my-room-app-73743-default-rtdb.firebaseio.com/anh_nen.json';
+      const FIREBASE_BG_URL = 'https://brother-7bb52-default-rtdb.asia-southeast1.firebasedatabase.app/anh_nen.json';
       try {
         const res = await fetch(FIREBASE_BG_URL);
         if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -1631,7 +1631,7 @@
 
     async function loadProjectsFromFirebase() {
             const track = document.getElementById('projectsTrack');
-            const FIREBASE_URL = 'https://my-room-app-73743-default-rtdb.firebaseio.com/du_an.json';
+            const FIREBASE_URL = 'https://brother-7bb52-default-rtdb.asia-southeast1.firebasedatabase.app/du_an.json';
 
             try {
               const response = await fetch(FIREBASE_URL);
